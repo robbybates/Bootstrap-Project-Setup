@@ -74,7 +74,7 @@
                     <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
                 </div>
         </div>
-
+<!-- start form -->
         <div class="row row-content">
             <div class="col-12">
                 <h2>Send us your Feedback</h2>
@@ -82,24 +82,63 @@
             </div>
             <div class="col-md-10">
                 <form>
-                    <label for="firstName" >First Name</label>
-                    <input type="text" id="firstName" name="firstName" placeholder="First Name" />
-                    <label for="lastName" >Last Name</label>
-                    <input type="text" id="lastName" name="lastName" placeholder="Last Name" />
-                    <label for="areacode" >Area Code</label>
-                    <input type="tel" id="areacode" name="areaCode" placeholder="Area Code" />
-                    <label for="telNum" >Contact Tel.</label> 
-                    <input type="tel" id="telNum" name="telNum" placeholder="Tel. number" />
-                    <label for="Email" >Email</label> 
-                    <input type="email" id="email" name="email" placeholder="Email" />
-                    May we contact you?
-                    <input type="radio" id="contactYes" name="contactRadios" value="yes" /> 
-                    <label for="contactYes" >Yes</label>
-                    <input type="radio" id="contactNo" name="contactRadios" value="no" /> 
-                    <label for="contactNo" >No</label>
-                    <label for="feedback" >Your Feedback</label>
-                    <textarea id="feedback" name="feedback" rows="8" ></textarea>
-                    <button type="submit">Send Feedback</button>
+                    <div class="form-group row">
+                        <label for="firstName" class="col-md-2 col-form-label">First Name</label>
+                        <div class="col-md-10">
+                            <input type="text" id="firstName" class="form-control" name="firstName" placeholder="First Name" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="lastName" class="col-md-2 col-form-label">Last Name</label>
+                        <div class="col-md-10">
+                            <input type="text" id="lastName" class="form-control" name="lastName" placeholder="Last Name" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="areacode" class="col-md-2 col-form-label">Contact Tel.</label>
+                        <div class="col-5 col-md-3">
+                            <input type="tel" id="areacode" class="form-control" name="areaCode" placeholder="Area Code" />
+                        </div>
+                        <div class="col-7">
+                            <input type="tel" id="telNum" class="form-control" name="telNum" placeholder="Tel. number" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="Email" class="col-md-2 col-form-label">Email</label> 
+                         <div class="col-md-10">
+                           <input type="email" id="email" class="form-control" name="email" placeholder="Email" />
+                         </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col offset-md-2">
+                            May we contact you? 
+                            <div class="form-check form-check-inline pl-3">
+                                <input type="radio" class="form-check-input" id="contactYes" name="contactRadios" value="yes" /> 
+                                <label for="contactYes" class="form-check-label">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" class="form-check-input" id="contactNo" name="contactRadios" value="no" /> 
+                                <label for="contactNo"  class="form-check-label">No</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                        <div class="col-md-10">
+                            <textarea  class="form-control" id="feedback" name="feedback" rows="8" ></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="offset-md-2 col-md-10">
+                            <button type="submit" class="btn btn-primary">Send Feedback</button>
+                        </div>
+                    </div>
                 </form>
             </div>
        </div>
