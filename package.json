@@ -4,9 +4,11 @@
   "description": "This is a website for the fictional campsites review site NuCamp.",
   "main": "index.html",
   "scripts": {
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
     "lite": "lite-server",
     "scss": "node-sass -o css/ css/",
-    "start": "npm run lite",
+    "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Robby Bates",
@@ -14,6 +16,8 @@
   "devDependencies": {
     "lite-server": "^2.6.1",
     "node-sass": "^6.0.1",
+    "onchange": "^7.0.0",
+    "parallelshell": "3.0.1",
     "sass": "^1.42.1"
   },
   "dependencies": {
