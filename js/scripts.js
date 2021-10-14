@@ -1,13 +1,7 @@
 
-$('#reserveModal').on('shown.bs.modal', function () {
-    $('#myInput').trigger('focus')
-})
-
-
-
 $(function() {
     $(".carousel").carousel( { interval: 2000 } );
-    $("#carouselButton").click(function(){
+    $("carouselButton").click(function() {
         if ($("#carouselButton").children("i").hasClass("fa-pause")) {
             $(".carousel").carousel("pause");
             $("#carouselButton").children("i").removeClass("fa-pause");
@@ -24,3 +18,15 @@ $(function() {
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 })
+
+$(function(){
+    $("#reserveButton").click(function(){
+      $('#reserveModal').modal("show")
+    });
+  });
+
+  $(function(){
+    $("#loginButton").click(function(){
+      $('#loginModal').modal("show")
+    });
+  });
